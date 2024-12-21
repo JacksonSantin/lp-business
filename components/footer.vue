@@ -25,12 +25,12 @@
             <p class="text-sm text-gray-600">Cidade Alta</p>
             <p class="text-sm text-gray-600">Marau - RS</p>
             <p class="text-sm text-gray-600">CEP: 99150-000</p>
-            <a
+            <a 
               href="https://www.google.com/maps/dir/?api=1&destination=-28.4458018158523,-52.20187841381167"
               target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center justify-center px-6 py-3 bg-red-600 text-white text-lg font-semibold rounded-md shadow-md hover:bg-red-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
               aria-label="Como chegar"
+              class="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
             >
               COMO CHEGAR
             </a>
