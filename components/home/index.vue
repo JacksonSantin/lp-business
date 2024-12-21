@@ -99,8 +99,9 @@
               class="aspect-video w-full"
               :style="{
                 backgroundImage: `url(${service.image})`,
-                backgroundSize: 'cover',
+                backgroundSize: 'contain',
                 backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
               }"
             >
             </div>
