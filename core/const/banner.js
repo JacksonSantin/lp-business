@@ -1,4 +1,4 @@
-export const gallery = [
+export const banner = [
   {
     link: "/images/banner/banner_1.jpg"
   },
