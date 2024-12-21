@@ -273,12 +273,12 @@ const currentServiceIndex = ref(0);
 const totalSlides = images.value.length;
 
 function nextServiceSlide() {
-  currentServiceIndex.value = (currentServiceIndex.value + 1) % services.value.length;
+  currentServiceIndex.value = (currentServiceIndex.value + 1) % imagesGallery.value.length;
 }
 
 function prevSlide() {
   currentServiceIndex.value = currentServiceIndex.value === 0 
-    ? services.value.length - 1 
+    ? imagesGallery.value.length - 1 
     : currentServiceIndex.value - 1;
 }
 
