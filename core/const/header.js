@@ -1,4 +1,5 @@
 export const header = [
+  { name: "Inicial", href: "/" },
   { name: "Guinchos", href: "/guinchos" },
   { name: "Guindastes", href: "/guindastes" },
   { name: "Empilhadeiras", href: "/empilhadeiras" },
