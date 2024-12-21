@@ -91,7 +91,7 @@
           :style="{ transform: `translateX(-${currentServiceIndex * 100}%)` }"
         >
           <div
-            v-for="(service, index) in services"
+            v-for="(service, index) in imagesGallery"
             :key="index"
             class="w-full flex-shrink-0 relative"
           >
@@ -128,7 +128,7 @@
 
       <div class="flex justify-center mt-4 gap-2">
         <button
-          v-for="(_, index) in services"
+          v-for="(_, index) in imagesGallery"
           :key="index"
           @click="goToSlide(index)"
           class="w-3 h-3 rounded-full transition-all"
