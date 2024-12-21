@@ -258,7 +258,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { banner } from "~/core/const/banner";
-import { images } from "~/core/const/images";
+import { gallery } from "~/core/const/gallery";
 import { vMaska } from "maska/vue";
 import Swal from "sweetalert2";
 import ContactJson from "../../assets/images/lotties/contact.json";
@@ -267,8 +267,7 @@ const zoom = ref(16);
 const center = ref([-28.4458018158523, -52.20187841381167]);
 const markerPosition = ref([-28.4458018158523, -52.20187841381167]);
 const images = ref(banner);
-const gallery = ref(images);
-const gallery = ref()
+const imagesGallery = ref(gallery);
 const currentIndex = ref(0);
 const currentServiceIndex = ref(0);
 const totalSlides = images.value.length;
