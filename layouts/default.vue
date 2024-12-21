@@ -4,6 +4,7 @@
 
     <div class="flex-grow">
       <slot />
+      <CookieConsent />
     </div>
 
     <Footer />
@@ -30,4 +31,5 @@
 import { mdiWhatsapp } from "@mdi/js";
 import Header from "~/components/header.vue";
 import Footer from "~/components/footer.vue";
+import CookieConsent from "~/components/CookieConsent.vue"
 </script>
