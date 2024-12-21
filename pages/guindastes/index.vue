@@ -1,0 +1,51 @@
+<template>
+  <section class="container mx-auto px-4 py-16 space-y-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-10">
+      <div class="text-center md:text-left">
+        <h2 class="text-2xl font-bold mb-4">GUINDASTE SANY 90T</h2>
+        <p class="text-lg leading-relaxed">
+          Guindaste com capacidade de 90 toneladas, A 3 metros com alcance
+          máximo de 76 metros de altura.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <img src="../../assets/images/guindastes/sany.jpg" alt="Sany" />
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <img
+          src="../../assets/images/guindastes/md300.jpg"
+          alt="MD 300"
+        />
+      </div>
+      <div class="text-center md:text-left">
+        <h2 class="text-2xl font-bold mb-4">GUINDASTE MD 300 MADAL</h2>
+        <p class="text-lg leading-relaxed">
+          Guindaste com capacidade de 30 toneladas, A 2.80 metros com alcance
+          máximo de 51 metros de altura.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-10">
+      <div class="text-center md:text-left">
+        <h2 class="text-2xl font-bold mb-4">GUINDASTE LT 1025</h2>
+        <p class="text-lg leading-relaxed">
+          Guindaste com capacidade de 25 toneladas, A 2.80 metros com alcance
+          máximo de 42 metros de altura.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <img src="../../assets/images/guindastes/30.jpg" alt="LT 1025" />
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+definePageMeta({
+  layout: "default",
+});
+</script>
