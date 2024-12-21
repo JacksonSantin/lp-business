@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto px-4 py-16 space-y-16">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-10">
-      <div class="text-center md:text-left">
+      <div class="text-justify md:text-left">
         <h2 class="text-2xl font-bold mb-4">PLANO DE RIGGING</h2>
         <p class="text-lg leading-relaxed">
           Trata-se do planejamento de movimentação do equipamento, na qual
