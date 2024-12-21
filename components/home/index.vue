@@ -81,10 +81,10 @@
     </div>
   </section>
 
-  <section class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-center mb-8">Galeria de Imagens</h2>
+  <section class="container mx-auto px-4 py-8">
+    <h2 class="text-3xl font-bold text-center mb-6">Galeria de Imagens</h2>
     
-    <div class="relative w-full">
+    <div class="relative w-full gallery">
       <div class="overflow-hidden rounded-lg shadow-lg">
         <div
           class="flex transition-transform duration-500 ease-in-out"
@@ -96,7 +96,8 @@
             class="w-full flex-shrink-0 relative"
           >
             <div
-              class="aspect-video w-full"
+              class="w-full"
+              style="height: 400px;"
               :style="{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: 'contain',
@@ -127,7 +128,7 @@
         </svg>
       </button>
 
-      <div class="flex justify-center mt-4 gap-2">
+      <div class="hidden md:flex justify-center mt-4 gap-2">
         <button
           v-for="(_, index) in imagesGallery"
           :key="index"
@@ -346,6 +347,10 @@ export default {
 
 .gallery-container {
   height: 100vh;
+  background-color: black;
+}
+
+.gallery {
   background-color: black;
 }
 
