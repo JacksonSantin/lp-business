@@ -97,7 +97,7 @@
           >
             <div
               class="w-full"
-              style="height: 400px;"
+              style="height: 700px;"
               :style="{
                 backgroundImage: `url(${service.image})`,
                 backgroundSize: 'contain',
@@ -112,7 +112,7 @@
 
       <button 
         @click="prevSlide"
-        class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg transition-all"
+        class="absolute left-2 top-1/2 -translate-y-1/2 bg-red-600 hover:bg-red-600 text-white p-2 rounded-full shadow-lg transition-all"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -121,22 +121,22 @@
 
       <button 
         @click="nextServiceSlide"
-        class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg transition-all"
+        class="absolute right-2 top-1/2 -translate-y-1/2 bg-red-600 hover:bg-red-600 text-white p-2 rounded-full shadow-lg transition-all"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
         </svg>
       </button>
 
-      <div class="hidden md:flex justify-center mt-4 gap-2">
-        <button
-          v-for="(_, index) in imagesGallery"
-          :key="index"
-          @click="goToSlide(index)"
-          class="w-3 h-3 rounded-full transition-all"
-          :class="currentServiceIndex === index ? 'bg-red-600' : 'bg-gray-300'"
-        ></button>
-      </div>
+    </div>
+    <div class="hidden md:flex justify-center mt-4 gap-2">
+      <button
+        v-for="(_, index) in imagesGallery"
+        :key="index"
+        @click="goToSlide(index)"
+        class="w-3 h-3 rounded-full transition-all"
+        :class="currentServiceIndex === index ? 'bg-red-600' : 'bg-gray-300'"
+      ></button>
     </div>
   </section>
 
