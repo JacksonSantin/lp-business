@@ -17,7 +17,7 @@
             v-model="username"
             type="text"
             placeholder="Usuário"
-            class="mt-1 p-2 w-full border border-gray-300 rounded-md"
+            class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
           />
         </div>
         <div class="mb-6">
@@ -29,7 +29,7 @@
             v-model="password"
             type="password"
             placeholder="Senha"
-            class="mt-1 p-2 w-full border border-gray-300 rounded-md"
+            class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
           />
         </div>
         <button
