@@ -1,23 +1,36 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2024-11-01",
+  compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ["~/assets/css/global.css"],
-
+  css: ['~/assets/css/global.css'],
   app: {
     head: {
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
       link: [
         {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap",
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap',
+        },
+      ],
+      script: [
+        {
+          async: true,
+          src: `https://www.googletagmanager.com/gtag/js?id=G-D92XG5EB1G`,
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-D92XG5EB1G');
+          `,
         },
       ],
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss', "@nuxtjs/leaflet"],
-});
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/leaflet'],
+})
