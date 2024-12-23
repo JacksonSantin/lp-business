@@ -9,5 +9,6 @@ useHead({
 
 definePageMeta({
   layout: 'authentication',
+  middleware: ['login'],
 })
 </script>
