@@ -5,15 +5,16 @@
         Política de Privacidade
       </h2>
       <p class="text-lg text-gray-700 leading-relaxed">
-        A sua privacidade é importante para nós. É política do <b>DM Guinchos e
-        Equipamentos Industriais Ltda</b> respeitar a sua privacidade em relação a
-        qualquer informação sua que possamos coletar no site
+        A sua privacidade é importante para nós. É política do
+        <b>DM Guinchos e Equipamentos Industriais Ltda</b> respeitar a sua
+        privacidade em relação a qualquer informação sua que possamos coletar no
+        site
         <a
           href="http://dmguinchos.com.br/"
           class="text-blue-600 hover:underline"
         >
-          <b>DM Guinchos e Equipamentos Industriais Ltda</b>
-        </a>, e outros sites que possuímos e operamos.
+          <b>DM Guinchos e Equipamentos Industriais Ltda</b> </a
+        >, e outros sites que possuímos e operamos.
       </p>
     </div>
     <div class="space-y-4">
@@ -43,8 +44,8 @@
           rel="noopener noreferrer"
           class="text-blue-600 hover:underline"
         >
-          políticas de privacidade 
-        </a>.
+          políticas de privacidade </a
+        >.
       </p>
       <p class="text-lg text-gray-700 leading-relaxed">
         Você é livre para recusar a nossa solicitação de informações pessoais,
@@ -65,8 +66,9 @@
       </h3>
       <p class="text-lg text-gray-700 leading-relaxed">
         O usuário se compromete a fazer uso adequado dos conteúdos e da
-        informação que o <b>DM Guinchos e Equipamentos Industriais Ltda</b> oferece no
-        site e com caráter enunciativo, mas não limitativo:
+        informação que o
+        <b>DM Guinchos e Equipamentos Industriais Ltda</b> oferece no site e com
+        caráter enunciativo, mas não limitativo:
       </p>
       <ul class="list-disc pl-6 text-lg text-gray-700">
         <li>
@@ -105,6 +107,9 @@
 
 <script setup>
 definePageMeta({
-  layout: "default",
-});
+  layout: 'default',
+})
+definePageMeta({
+  middleware: ['auth'],
+})
 </script>
