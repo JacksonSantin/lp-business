@@ -1,6 +1,5 @@
 <template>
   <section class="container mx-auto px-4 py-16 space-y-16">
-    <!-- Primeiro item -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-10">
       <div class="order-2 md:order-1 text-center md:text-left">
         <h2 class="text-2xl font-bold mb-4">GUINDASTE SANY 90T</h2>
@@ -14,13 +13,9 @@
       </div>
     </div>
 
-    <!-- Segundo item -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div class="order-1">
-        <img
-          src="../../assets/images/guindastes/md300.jpg"
-          alt="MD 300"
-        />
+        <img src="../../assets/images/guindastes/md300.jpg" alt="MD 300" />
       </div>
       <div class="order-2 text-center md:text-left">
         <h2 class="text-2xl font-bold mb-4">GUINDASTE MD 300 MADAL</h2>
@@ -31,7 +26,6 @@
       </div>
     </div>
 
-    <!-- Terceiro item -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-10">
       <div class="order-2 md:order-1 text-center md:text-left">
         <h2 class="text-2xl font-bold mb-4">GUINDASTE LT 1025</h2>
@@ -49,6 +43,9 @@
 
 <script setup>
 definePageMeta({
-  layout: "default",
-});
+  layout: 'default',
+})
+definePageMeta({
+  middleware: ['auth'],
+})
 </script>

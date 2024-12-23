@@ -1,8 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ['~/assets/css/global.css'],
+  runtimeConfig: {
+    public: {
+      user: process.env.LOGIN_USERNAME,
+      pass: process.env.LOGIN_PASSWORD,
+    },
+  },
   app: {
     head: {
       meta: [

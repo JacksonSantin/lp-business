@@ -8,7 +8,10 @@
         </p>
       </div>
       <div class="flex justify-center">
-        <img src="../../assets/images/containers/container2.png" alt="Container" />
+        <img
+          src="../../assets/images/containers/container2.png"
+          alt="Container"
+        />
       </div>
     </div>
   </section>
@@ -16,6 +19,9 @@
 
 <script setup>
 definePageMeta({
-  layout: "default",
-});
+  layout: 'default',
+})
+definePageMeta({
+  middleware: ['auth'],
+})
 </script>
